@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Howard college web</title>
+    <style>
+      .students{
+        margin:10px
+      }
+      .intro{
+        width:600px;
+        margin-bottom:10px;
+        line-height:2;
+      }
+      button{
+        cursor:pointer;
+        padding:5px;
+        margin-top:10px;
+        border-radius:5px;
+        backgorund-color:blue;
+        color:white;
+    }
+      form{
+        display:flex;
+        flex-direction:column;
+        gap:2;
+        margin: 0 auto;
+        width:80%;
+        line-height:2
+      }
+    form>*{
+      width:300px;
+      padding:2px;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="intro">
+        <h1>Welcome to Howard College! Select a Learning Path and Shape Your future Today </h1>
+        <img 
+          src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="students in class"
+          class="students"
+          />
+        <h2>Who we are</h1>
+        <p>We are an international college with an aim of providing education and resources 
+          for everyone in the world for free.We believe that education is
+          a tool that if used properly,can be used to eradicate poverty and improve the living condition
+          of people in third world countries.
+        </p>
+      </section>
+      <section class="courses_offered">
+        <h1>All our courses</h2>
+        <ol type="i">
+          <li>Cyber security</li>
+          <li>Software engineering</li>
+          <li>Data science and analysis</li>
+          <li>Computer science and mathematics</li>
+          <li>Information Technology</li>
+        </ol>
+      </section>
+      <section>
+        <h1>Contact our team</h1>
+        <table border=2>
+          <thead>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>Mobile</td>
+          </thead>
+          <tr>
+            <td>Peter k.</td>
+            <td>peter123@gmail.com</td>
+            <td>1234 rongai</td>
+            <td>+2542734567</td>
+          </tr>
+          <tr>
+            <td>Alice mwangi.</td>
+            <td>alice.m@gmail.com</td>
+            <td>404 not found</td>
+            <td>+254234567657</td>
+          </tr>
+          <tr>
+            <td>Brandon</td>
+            <td>brandy@gmail.com</td>
+            <td>4th st. Nairobi</td>
+            <td>+2542734567</td>
+          </tr>
+          <tr>
+            <td>Joe zuberi.</td>
+            <td>pzuberi.jhoe@gmail.com</td>
+            <td>42069 ruiru</td>
+            <td>+2548476523</td>
+          </tr>
+          <tr>
+            <td>Darius kingkaid.</td>
+            <td>dkingkaid23@gmail.com</td>
+            <td>fear street</td>
+            <td>+254765437</td>
+          </tr>
+          <tr>
+            <td>Rugano st.Laurent </td>
+            <td>laurent@gmail.com</td>
+            <td>vibes street</td>
+            <td>+2542734567</td>
+          </tr>
+        </table>
+      </section>
+      <div class="form_container">
+        <h1>Register to join our school today</h1>
+        <p>After a successful registration,our team will contact you on more info about the school</p>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" placeholder="Enter your username..." min="4" max="20" id="username" required/>
+          
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Enter your email..." min="4" max="20" id="email" required/>
+          
+          <label for="date-of-birth">Date of birth:</label>
+          <input type="date" placeholder="Enter your Date of birth..." min="4" max="20" id="date-of-birth" required/>
+
+          <label for="gender">Gender</label>
+          <fieldset>
+            <label for="male">male</label>
+            <input type="radio" name="gender"id="male"/>
+            <label for="gender">Female</label>
+            <input type="radio" name="gender"id="female"/>
+          </fieldset>
+          
+          <label for="username">Country of origin:</label>
+          <select>
+            <option>kenya</option>
+            <option>Tanzania</option>
+            <option>Egypt</option>
+            <option>Ethiopia</option>
+            <option>Uganda</option>
+            <option>Mali</option>
+            <option>Nigeria</option>
+          </select>
+          <button type="submit">Submit form</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
